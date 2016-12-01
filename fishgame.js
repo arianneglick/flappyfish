@@ -115,7 +115,10 @@ function onpress(event){
 function canvasSetup(){
     canvas = document.createElement("canvas");
 
-    canvas.style.border = "15px solid #382b1d";
+    canvas.id = "canvasArea";
+
+
+    canvas.style.border = "5px solid #382b1d";
 
     canvas.width = width;
     canvas.height = height;
@@ -126,7 +129,7 @@ function canvasSetup(){
 function loadGraphics() {
     // Initiate the sprite sheet
     var img = new Image();
-    img.src = "images/monsterSheet.png";
+    img.src = "images/dragon_sprites_.png";
     img.onload = function () {
         initSprites(this);
         renderingContext.fillStyle = "#8BE4FD";
